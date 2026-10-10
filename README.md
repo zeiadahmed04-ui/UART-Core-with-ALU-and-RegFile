@@ -22,8 +22,7 @@ A host sends command frames over a serial UART link. The system decodes them and
 8. [Results](#results)
 9. [Simulation](#simulation)
 10. [Re-running the flow](#re-running-the-flow)
-11. [Known issues](#known-issues)
-12. [License](#license)
+11. [License](#license)
 
 ---
 

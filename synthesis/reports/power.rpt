@@ -1,0 +1,82 @@
+Loading db file '/home/ICer/system_top/std_cells/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : SYS_TOP
+Version: O-2018.06-SP1
+Date   : Sat Oct 10 03:43:49 2026
+****************************************
+
+
+Library(s) Used:
+
+    scmetro_tsmc_cl013g_rvt_ss_1p08v_125c (File: /home/ICer/system_top/std_cells/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db)
+
+
+Operating Conditions: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c   Library: scmetro_tsmc_cl013g_rvt_ss_1p08v_125c
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 1.08 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+SYS_TOP                                3.03e-02    0.340 1.63e+07    0.387 100.0
+  u_pulse_gen (PULSE_GEN)                 0.000 9.98e-06 2.31e+04 3.31e-05   0.0
+  u_uart_tx (UART_TX_Top)              8.63e-08 8.02e-05 4.72e+05 5.52e-04   0.1
+    dut3 (Mux_4x1)                        0.000    0.000 2.34e+04 2.34e-05   0.0
+    dut2 (parity_cal)                  5.41e-08 5.28e-06 1.12e+05 1.17e-04   0.0
+    dut1 (Fsm_tx)                      3.23e-08 1.50e-05 1.03e+05 1.18e-04   0.0
+    dut0 (Serializer)                     0.000 5.99e-05 2.34e+05 2.94e-04   0.1
+  u_async_fifo (ASYNC_FIFO_TOP)        1.85e-04    0.122 3.71e+06    0.126  32.6
+    u_mem (FIFO_MEM_CNTRL)             9.10e-06    0.102 2.77e+06    0.105  27.2
+    u_sync_w2r (DF_SYNC_1)                0.000 5.09e-05 9.33e+04 1.44e-04   0.0
+    u_sync_r2w (DF_SYNC_0)                0.000 7.58e-03 1.19e+05 7.70e-03   2.0
+    u_fifo_rd (FIFO_RD)                   0.000 7.47e-05 3.33e+05 4.08e-04   0.1
+    u_fifo_wr (FIFO_WR)                2.98e-06 1.19e-02 3.88e+05 1.23e-02   3.2
+  u_uart_rx (Top)                      4.38e-04 2.81e-03 1.15e+06 4.40e-03   1.1
+    u_stop_check (Stop_check)             0.000    0.000 4.47e+03 4.47e-06   0.0
+    u_par (parity_check)               3.12e-07 5.82e-05 5.76e+04 1.16e-04   0.0
+    u_start_check (start_check)        2.17e-07 9.07e-07 3.08e+03 4.21e-06   0.0
+    u_deserializer (deserializer)      1.54e-04 1.54e-03 1.46e+05 1.84e-03   0.5
+    u_data_sampling (Data_Sampling)    8.27e-06 8.15e-05 9.88e+04 1.89e-04   0.0
+    u_edge_bit_counter (edge_bit_counter)
+                                       3.31e-05 7.36e-04 4.39e+05 1.21e-03   0.3
+    u_fsm (fsm)                        5.92e-05 3.73e-04 3.95e+05 8.27e-04   0.2
+  u_clk_divider (clk_divider)          9.90e-06 6.58e-04 4.66e+05 1.13e-03   0.3
+    add_39 (clk_divider_DW01_inc_0)       0.000    0.000 9.86e+04 9.86e-05   0.0
+  u_alu (ALU_TOP)                      4.68e-05 3.13e-02 5.62e+06 3.70e-02   9.6
+    u_mux4x1 (mux4x1)                  4.63e-06 3.32e-06 2.20e+05 2.28e-04   0.1
+    u_shift (SHIFT_UNIT)               1.18e-06 8.00e-03 1.80e+05 8.18e-03   2.1
+    u_cmp (CMP_UNIT)                   2.52e-06 2.40e-03 2.26e+05 2.63e-03   0.7
+    u_logic (LOGIC_UNIT)               6.51e-06 7.21e-03 3.75e+05 7.59e-03   2.0
+    u_arith (ARITHMETIC_UNIT)          3.05e-05 1.37e-02 4.58e+06 1.83e-02   4.7
+      mult_23 (ARITHMETIC_UNIT_DW02_mult_0)
+                                       1.27e-05 2.63e-05 1.71e+06 1.75e-03   0.5
+      add_21 (ARITHMETIC_UNIT_DW01_add_0)
+                                       7.74e-07 5.35e-06 2.26e+05 2.32e-04   0.1
+      sub_22 (ARITHMETIC_UNIT_DW01_sub_0)
+                                       9.57e-07 6.22e-06 2.50e+05 2.57e-04   0.1
+      div_24 (ARITHMETIC_UNIT_DW_div_tc_0)
+                                       1.51e-05 4.38e-05 2.00e+06 2.06e-03   0.5
+    u_decoder (DECODER)                1.43e-06 1.59e-06 4.07e+04 4.38e-05   0.0
+  u_sys_ctrl (SYS_CTRL)                4.41e-04 2.94e-02 1.03e+06 3.09e-02   8.0
+  u_regfile (regfile)                  3.99e-05    0.148 3.70e+06    0.151  39.2
+  u_rst_sync_2 (rst_sych_1)            2.09e-04 3.57e-04 3.56e+04 6.02e-04   0.2
+  u_rst_sync_1 (rst_sych_0)            1.58e-05 3.39e-03 3.77e+04 3.44e-03   0.9
+1

@@ -1,0 +1,13 @@
+work/
+*.pvl
+*.syn
+*.mr
+alib-52/
+command.log
+filenames.log
+*.swp
+*.vcd
+*.wlf
+transcript
+csrc/
+simv*

@@ -1,0 +1,100 @@
+**************************************************
+Report         : unmatched_points
+
+Reference      : Ref:/WORK/SYS_TOP
+Implementation : Imp:/WORK/SYS_TOP
+Version        : L-2016.03-SP1
+Date           : Sat Oct 10 05:35:31 2026
+**************************************************
+
+30 Unmatched points (30 reference, 0 implementation):
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_cmp/CMP_OUT_reg[10]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_cmp/CMP_OUT_reg[11]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_cmp/CMP_OUT_reg[12]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_cmp/CMP_OUT_reg[13]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_cmp/CMP_OUT_reg[14]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_cmp/CMP_OUT_reg[15]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_cmp/CMP_OUT_reg[2]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_cmp/CMP_OUT_reg[3]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_cmp/CMP_OUT_reg[4]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_cmp/CMP_OUT_reg[5]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_cmp/CMP_OUT_reg[6]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_cmp/CMP_OUT_reg[7]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_cmp/CMP_OUT_reg[8]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_cmp/CMP_OUT_reg[9]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_logic/Logic_OUT_reg[10]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_logic/Logic_OUT_reg[11]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_logic/Logic_OUT_reg[12]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_logic/Logic_OUT_reg[13]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_logic/Logic_OUT_reg[14]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_logic/Logic_OUT_reg[15]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_logic/Logic_OUT_reg[8]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_logic/Logic_OUT_reg[9]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_shift/SHIFT_OUT_reg[10]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_shift/SHIFT_OUT_reg[11]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_shift/SHIFT_OUT_reg[12]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_shift/SHIFT_OUT_reg[13]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_shift/SHIFT_OUT_reg[14]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_shift/SHIFT_OUT_reg[15]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_alu/u_shift/SHIFT_OUT_reg[9]
+
+  Ref  DFF0X      Ref:/WORK/SYS_TOP/u_uart_rx/u_fsm/data_valid_reg_reg
+
+ [BBNet: multiply-driven net
+  BBox:  black-box
+  BBPin: black-box pin
+  Block: hierarchical block
+  BlPin: hierarchical block pin
+  Cut:   cut-point
+  DFF:   non-constant DFF register
+  DFF0:  constant 0 DFF register
+  DFF1:  constant 1 DFF register
+  DFFX:  constant X DFF register
+  DFF0X: constrained 0X DFF register
+  DFF1X: constrained 1X DFF register
+  LAT:   non-constant latch register
+  LAT0:  constant 0 latch register
+  LAT1:  constant 1 latch register
+  LATX:  constant X latch register
+  LAT0X: constrained 0X latch register
+  LAT1X: constrained 1X latch register
+  LATCG: clock-gating latch register
+  TLA:   transparent latch register
+  TLA0X: transparent constrained 0X latch register
+  TLA1X: transparent constrained 1X latch register
+  Loop:  cycle break point
+  Net:   matchable net
+  Port:  primary (top-level) port
+  Und:   undriven signal cut-point
+  Unk:   unknown signal cut-point]
+
+1

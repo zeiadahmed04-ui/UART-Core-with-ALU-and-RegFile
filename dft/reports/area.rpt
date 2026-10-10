@@ -1,0 +1,82 @@
+ 
+****************************************
+Report : area
+Design : SYS_TOP
+Version: O-2018.06-SP1
+Date   : Sat Oct 10 06:27:51 2026
+****************************************
+
+Library(s) Used:
+
+    scmetro_tsmc_cl013g_rvt_ss_1p08v_125c (File: /home/ICer/system_top/std_cells/scmetro_tsmc_cl013g_rvt_ss_1p08v_125c.db)
+
+Number of ports:                         1030
+Number of nets:                          3567
+Number of cells:                         2423
+Number of combinational cells:           1798
+Number of sequential cells:               586
+Number of macros/black boxes:               0
+Number of buf/inv:                        277
+Number of references:                      18
+
+Combinational area:              15285.333230
+Buf/Inv area:                     1126.101921
+Noncombinational area:           16345.539948
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 31630.873177
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  ---------------------------
+SYS_TOP                           31630.8732    100.0    168.2681     21.1806  0.0000  SYS_TOP
+u_alu                              7901.5406     25.0      8.2369      0.0000  0.0000  ALU_TOP_test_1
+u_alu/u_arith                      5925.8613     18.7    297.7051    560.1092  0.0000  ARITHMETIC_UNIT_test_1
+u_alu/u_arith/add_21                252.9905      0.8    252.9905      0.0000  0.0000  ARITHMETIC_UNIT_DW01_add_0
+u_alu/u_arith/div_24               2301.6252      7.3   2301.6252      0.0000  0.0000  ARITHMETIC_UNIT_DW_div_tc_0
+u_alu/u_arith/mult_23              2229.8465      7.0   1982.7395      0.0000  0.0000  ARITHMETIC_UNIT_DW02_mult_0
+u_alu/u_arith/mult_23/FS_1          247.1070      0.8    247.1070      0.0000  0.0000  ARITHMETIC_UNIT_DW01_add_1
+u_alu/u_arith/sub_22                283.5847      0.9    283.5847      0.0000  0.0000  ARITHMETIC_UNIT_DW01_sub_0
+u_alu/u_cmp                         375.3673      1.2    276.5245     98.8428  0.0000  CMP_UNIT_test_1
+u_alu/u_decoder                      67.0719      0.2     67.0719      0.0000  0.0000  DECODER
+u_alu/u_logic                       707.1967      2.2    410.6683    296.5284  0.0000  LOGIC_UNIT_test_1
+u_alu/u_mux4x1                      370.6605      1.2    370.6605      0.0000  0.0000  mux4x1
+u_alu/u_shift                       447.1460      1.4    117.6700    329.4760  0.0000  SHIFT_UNIT_test_1
+u_async_fifo                       7614.4259     24.1     14.1204      0.0000  0.0000  ASYNC_FIFO_TOP_test_1
+u_async_fifo/u_fifo_rd              710.7268      2.2    217.6895    493.0373  0.0000  FIFO_RD_test_1
+u_async_fifo/u_fifo_wr              710.7268      2.2    216.5128    494.2140  0.0000  FIFO_WR_test_1
+u_async_fifo/u_mem                 5519.8998     17.5   2055.6950   3464.2048  0.0000  FIFO_MEM_CNTRL_test_1
+u_async_fifo/u_sync_r2w             329.4760      1.0      0.0000    329.4760  0.0000  DF_SYNC_test_0
+u_async_fifo/u_sync_w2r             329.4760      1.0      0.0000    329.4760  0.0000  DF_SYNC_test_1
+u_clk_divider                       868.4046      2.7    396.5479    364.7770  0.0000  clk_divider_test_1
+u_clk_divider/add_39                107.0797      0.3    107.0797      0.0000  0.0000  clk_divider_DW01_inc_0
+u_data_sync                         578.9364      1.8     84.7224    494.2140  0.0000  data_sync_n8_test_1
+u_pulse_gen                          71.7787      0.2      5.8835     65.8952  0.0000  PULSE_GEN_test_1
+u_regfile                          8991.1648     28.4   2819.3732   6171.7915  0.0000  regfile_test_1
+u_rst_sync_1                         98.8428      0.3      0.0000     98.8428  0.0000  rst_sych_test_0
+u_rst_sync_2                         98.8428      0.3      0.0000     98.8428  0.0000  rst_sych_test_1
+u_sys_ctrl                         2215.7262      7.0    996.6649   1219.0612  0.0000  SYS_CTRL_test_1
+u_uart_rx                          2053.3415      6.5      7.0602      0.0000  0.0000  Top_test_1
+u_uart_rx/u_data_sampling           130.6137      0.4     96.4894     34.1243  0.0000  Data_Sampling_test_1
+u_uart_rx/u_deserializer            335.3595      1.1     62.3651    272.9944  0.0000  deserializer_test_1
+u_uart_rx/u_edge_bit_counter        854.2842      2.7    444.7926    409.4916  0.0000  edge_bit_counter_test_1
+u_uart_rx/u_fsm                     629.5345      2.0    491.8606    137.6739  0.0000  fsm_test_1
+u_uart_rx/u_par                      84.7224      0.3     50.5981     34.1243  0.0000  parity_check_test_1
+u_uart_rx/u_start_check               5.8835      0.0      5.8835      0.0000  0.0000  start_check
+u_uart_rx/u_stop_check                5.8835      0.0      5.8835      0.0000  0.0000  Stop_check
+u_uart_tx                           948.4202      3.0      0.0000      0.0000  0.0000  UART_TX_Top_test_1
+u_uart_tx/dut0                      585.9966      1.9    190.6254    395.3712  0.0000  Serializer_test_1
+u_uart_tx/dut1                      202.3924      0.6    103.5496     98.8428  0.0000  Fsm_tx_test_1
+u_uart_tx/dut2                      134.1438      0.4    101.1962     32.9476  0.0000  parity_cal_test_1
+u_uart_tx/dut3                       25.8874      0.1     25.8874      0.0000  0.0000  Mux_4x1
+--------------------------------  ----------  -------  ----------  ----------  ------  ---------------------------
+Total                                                  15285.3332  16345.5399  0.0000
+
+1

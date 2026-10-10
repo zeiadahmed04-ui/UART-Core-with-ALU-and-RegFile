@@ -1,0 +1,66 @@
+current_design SYS_TOP
+
+####################################################################################
+                  #### Section 1 : Clock Definition ####
+####################################################################################
+
+# REF_CLK 50 MHz
+clock -name REF_CLK  -period 20     -waveform {0 10}       -domain d0
+
+# UART_CLK 3.6864 MHz
+clock -name UART_CLK -period 271.27 -waveform {0 135.635}  -domain d1
+
+# Divided clock from the clock divider (UART_CLK / 32)
+generated_clock -name UART_TX_CLK -source UART_CLK -divide_by 32
+#generated_clock -name clk_sel -source UART_CLK -divide_by 32
+
+
+
+# Gated clock from the library cell TLATNCAX4M (REF_CLK passes through it), domain d0
+generated_clock -name ALU_CLK -source REF_CLK -divide_by 1
+
+####################################################################################
+                  #### Section 2 : Reset Definition ####
+####################################################################################
+
+reset -name RST -value 0 -async
+
+# Synchronized reset nets
+reset -name RST_SYNC_1 -value 0 -sync
+reset -name RST_SYNC_2 -value 0 -sync
+
+####################################################################################
+             #### Section 3 : set input/output clock domains  ####
+####################################################################################
+
+abstract_port -ports RX_IN         -clock UART_CLK
+abstract_port -ports TX_OUT        -clock UART_CLK
+abstract_port -ports parity_error  -clock UART_CLK
+abstract_port -ports stop_error    -clock UART_CLK
+
+abstract_port -ports RST           -clock REF_CLK
+
+
+####################################################################################
+             #### Section 4 : Quasi static signals  ####
+####################################################################################
+
+quasi_static -name SYS_TOP.u_regfile.REG2
+quasi_static -name SYS_TOP.u_regfile.REG3
+
+####################################################################################
+             #### Section 5 : set_case_analysis  ####
+####################################################################################
+
+# Clock divider is always on (tied to 1 in SYS_CTRL)
+set_case_analysis -name SYS_TOP.CLK_DIV_EN -value 1
+
+####################################################################################
+             #### Section 6 : DATA/RESET Synchronizers  ####
+####################################################################################
+
+# Each synchronized reset with its own clock
+reset_synchronizer -name u_rst_sync_1.sych_rst -reset RST -clock REF_CLK  -value 0
+reset_synchronizer -name u_rst_sync_2.sych_rst -reset RST -clock UART_CLK -value 0
+sync_cell -name DF_SYNC
+sync_cell -name data_sync

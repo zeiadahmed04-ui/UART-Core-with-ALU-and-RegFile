@@ -243,15 +243,6 @@ The scripts use `glob $RTL_DIR/*.v`, which only sees a flat folder. Because the 
 
 ---
 
-## Known issues
-
-- **SpyGlass:** the dashboard log reports `Failed to checkout license feature 'dashboard'`, so no lint or CDC report exists yet.
-- **Formality equivalence is only partial:** both Formality runs report `SUCCEEDED`, but only 10 compare points were matched and 30 reference points were unmatched. Review `unmatched_points.rpt` in each `formality/*/reports/` folder before claiming full equivalence.
-- **Tight synthesis setup slack:** worst setup slack after synthesis is 0.01 ns, so there is essentially no margin.
-- **Unused modules:** `CLK_GATE.v` and `mux2x1.v` are present but not instantiated by `SYS_TOP.v` (the design uses a library clock-gate cell directly).
-- **Gate-level simulation and place-and-route** have not been done yet.
-
----
 
 ## License
 
